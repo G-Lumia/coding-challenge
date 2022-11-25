@@ -1,0 +1,145 @@
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /* Il background del sito, settato in modo tale che possa ridimensionarsi in base
+  alla grandezza della finestra */
+  background: url("background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Il logo del sito, posizionato all'interno di header */
+header > img{
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  height: auto;
+  padding-top: 6%;
+}
+
+/* Il testo che si trova sotto al logo, posizionato all'interno di header */
+header > h1{
+  font-weight:bold;
+  font-size: 40px;
+  color: #0d0;
+  margin: auto;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* La classe contenitore, che sarà la base per altri contenitori utilizzati
+all'interno del sito */
+.box{
+  margin:auto;
+}
+
+/* La classe "box" utilizzata all'interno di div, quando quest'ultimo si
+trova all'interno di body */
+body > div.box{
+  background-color: rgba(0,0,0,0.4);
+  width:75%;
+  border-radius: 50px;
+  padding-bottom: 85px;
+}
+
+/* La classe "box" utilizzata all'interno di div, quando quest'ultimo si
+trova all'interno di nav */
+nav > div.box{
+  background-color: #0d0;
+  width: 70%;
+  height: 50px;
+  text-align: center;
+}
+
+/* La classe "box" utilizzata all'interno di div, quando quest'ultimo si
+trova all'interno di main */
+main > div.box{
+  width: 70%;
+}
+
+/* Classe button, creata per dare uno stile preciso ai pulsanti situati all'interno
+di nav */
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 7px 30px;
+  cursor: pointer;
+}
+
+/* Selettore che punta ai tag input di tipo submit situati all'interno di nav.
+Usato per dare misure precise ai pulsanti*/
+nav > input[type=submit]{
+  margin-top: 10px;
+  height: 30px;
+  width: auto;
+  display: inline-block;
+}
+
+/* Selettore che punta i tag input di tipo checkbox ed i tag h2, situati
+all'interno di section. Usato per poter mettere entrambi gli elementi sulla
+stessa linea*/
+section > input[type=checkbox],h2{
+  display: inline-block;
+}
+
+/* Selettore che punta i tag  h2 ed h3, situati
+all'interno di section. Usato per dare colore e spaziatura al testo*/
+section > h2,h3{
+  color: white;
+  line-height: 30px;
+  margin: auto;
+}
+
+/* Selettore che punta i tag h2, situati
+all'interno di section. Usato per dare un margine superiore al testo*/
+section > h2{
+  margin-top:30px;
+}
+
+/* Selettore che punta i tag h3, situati
+all'interno di section. Usato per dare un margine superiore al testo*/
+section > h3{
+  font-weight: normal;
+}
+
+/* Selettore che punta il primo tag h3, situato all'interno
+di un section, che andrà ad inserire all'inizio del testo il simbolo di
+una freccia*/
+section > h3:first-of-type::before{
+  content: "\27FC";
+}
+
+/* Id che permettono di creare tre tipologie di figure, atte a rappresentare
+grossolanamente lo stato di carica dei monopattini */
+
+#batteriaAlta{
+    width:700px;
+    height:35px;
+    background:#1ec31e;
+    border-radius: 10px;
+}
+
+#batteriaBassa{
+    width:150px;
+    height:35px;
+    background:#be4141;
+    border-radius: 10px;
+}
+
+#batteriaMedia{
+    width:450px;
+    height:35px;
+    background:#f5b453;
+    border-radius: 10px;
+}
